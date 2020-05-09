@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="author" content="ESTOM PAULINO DA SILA JUNIOR">
+    <title>Formulario de cadastro</title>
+    <link rel="stylesheet" type="text/css" href="test.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="center">
+            <h1>itBEE</h1>
+            <img src="logo.png" alt="Logo" />
+
+
+        </div>
+    </header>
+
+    <section class="formulario">
+        <div class="center">
+            <fieldset>
+                <form method="post">
+                    <div class="box">
+                        <label for="cnome"> Nome:</label> <input type="name" placeholder="Nome" name="nome" />
+                    </div>
+                    <div class="box">
+                        <p><label for="cpf"> CPF/CNPJ:</label> <input type="number" placeholder="CPF/CNPJ" name="cpf" />
+                    </div>
+                    <div class="box">
+                        <label for="email"> Email:</label> <input type="email" placeholder="Email" name="email" />
+                    </div>
+
+                    <div class="box">
+                        <label for="senha">Senha:</label> <input type="password" placeholder="Senha" name="senha" />
+                    </div>
+                    <div class="box ">
+                        <label>Data de nascimento:</label> <input type="date" name="tdate">
+                    </div>
+                    <div class="box">
+                        <label for="sexo">Sexo:</label><br />
+                        <input type="radio" name="tSexo"><label for="cMas"> Masculino</label>
+                        <input type="radio" name="tSexo"><label for="cFem">Feminino</label>
+                        <input type="radio" name="tSexo"><label for="cOut">Outro</label>
+                    </div>
+                    <div class="box">
+                    <label for = "tipocad">Tipo de cadastro: </label><br/>
+                        <input type="radio" name="ttipo" id="cCliente" onclick="ocultar()"><label for="cCliente">Cliente</label>
+                        <input type="radio" name="ttipo" id="cProfissional" onclick="mostrar()"><label for="cProfissional">Profissional</label>
+
+                        </div>
+                        <div>
+                            <p id="entrar"><a href="../page/pagina.html">Entrar</a></p>
+                            <p><a href="../page/pagina.html">Voltar</a></p>   
+                        </div>
+                        <div class="box" id="oculto" class="hidden">
+                                <label><br> Formação Profissional</label>
+                                   <label for="tcurso"> <br> Curso:</label> <input type="text" name="tcurso" id="cCusro" size="30" placeholder="Nome do Curso" ><br>
+                                    <label for="">Status:</label>
+                                <select>
+                                        <option value="curs">Cursando</option>
+                                          <option value="conc">Concluído</option>
+                                    </select><br/>
+                        </div>
+               
+                            <label>Especialidade</label>
+                                    <div class="box">
+                                      <label>Área de Atuação:</label>
+                                    <select>
+                                        <option value="devWeb">Desenvolvimento Web</option>
+                                         <option value="Desing">Designer</option>
+                                         <option value="Suporte">Suporte de Hardware</option>
+                                         <button type="submit" class="btnn">Cadastrar</button>
+                                    </select>         
+                                    </div>
+    </section>
+
+ <!--  <footer class="rodape ">
+        <p>Todos os direitos reservados itBEE - 2020</p>
+        </footer>-->
+
+</body><script type="text/javascript" src="scriptlogin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>PáginaCliente</title>
+</head>
+
+<body>
+	<!--N A V B A R-->
+    <a class="navbar-brand " href="# ">
+        <img src="itBee.jpeg " width="50 " height="50 " class="d-inline-block align-top " alt=" "> ItBee
+    </a>
+    <nav class="navbar navbar-light" style="background-color: #eead2d; ">
+        <form class="form-inline ">
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <button type="button" class="btn btn-default ml-2">
+                <span class="glyphicon glyphicon-search"></span> Buscar
+            </button>
+        </form>
+        <div>
+            <!--Botao do HOME-->
+            <a class="btn btn-default btn-sn" href="feed.htm" role="button">
+                <span class="glyphicon glyphicon-home"></span> Home
+            </a>
+            <!--Botao do HOME-->
+
+            <!-- MODAL MENSAGENS-->
+            <button type="button" class="btn btn-default btn-sn" data-toggle="modal" data-target="#myModal">
+                 <span class="glyphicon glyphicon-comment"></span> Mensagens  
+                <span class="badge">0</span>
+                </button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span> Você não tem nenhuma nova mensagem.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL MENSAGENS-->
+        </div>
+        <!--SESSAO USUARIO-->
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></buttonclass>
+                <span class="glyphicon glyphicon-user"></span> Usuario
+                </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Meu Perfil</a>
+                <a class="dropdown-item" href="#">Gerenciar conta</a>
+                <a class="dropdown-item" href="#">Minhas demandas</a>
+                <a class="dropdown-item" href="./pagina.html">Sair</a>
+            </div>
+        </div>
+        <!--SESSAO USUARIO-->
+    </nav>
+    <!--N A V B A R-->
+
+    <!--PERFIL USUARIO-->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-3 well">
+                <div class="well">
+                    <p><a href="#">Vanderlane Gonçalves</a></p>
+                    <img src="man.png" class="img-circle" height="65" width="65" alt="Avatar">
+                </div>
+                <div class="well">
+                    <p>Mural de Projetos:</p>
+                    <p>
+                        <a href="https://www.coursera.org/learn/nand2tetris2"><span class="label label-primary">ProjetoHardWare</span></a>
+                        <a href="https://www.canva.com/design/DAD63mjaZfw/6G--biQTx-UetlgzGgCXrw/view?utm_content=DAD63mjaZfw&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"><span class="label label-warning">ProjetoItBee</span></a>
+                        <a href="https://www.blogger.com/about/?hl=pt-br"><span class="label label-success">Blogger</span> </a>
+                        
+                    </p>
+                </div>
+                <div class="alert alert-success fade in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close"></a>
+                    <p><strong><b>Contatos:</b></strong></p>
+                    <p><a href="https://www.facebook.com/vanderlane.goncalves.9?ref=bookmarks">Facebook</a></p>
+                    <p><a href="https://www.instagram.com/vanderlanegoncalvesc/">Instagram</a></p>
+                    <p style="color:rgb(57, 57, 255)">(**) 9****-****</p>
+
+                </div>      
+            </div>
+            <div class="col-sm-7">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="panel panel-default text-left">
+                            <div class="panel-body">
+                                <p contenteditable="true">Procurando Programadores FullStack,projeto de desemvolvimento motor na área da sáude, relacionada de forma educacional.
+                                    <br>Descrição do Projeto: <br>
+                                    Desemvolvimento web <br>
+                                    Desemvolvimento mobile <br>
+                                    Funções de jogos para auxiliar movimentos.<br>
+                                    Gerador de relátorios complexos <br>
+                                </p>
+                                <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+              </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Estom Paulino</p>
+                            <img src="man.png" class="img-circle" height="55" width="55" alt="Avatar">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <p>Projeto em andamento ItBEE:<br>Site rede social para proficionais em TI <br>Descrção: <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat earum officiis, eligendi quo alias dolore totam unde culpa pariatur maxime animi, ab eveniet rem neque expedita quam architecto explicabo? Perferendis? </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Elvinho</p>
+                            <img src="man.png" class="img-circle" height="55" width="55" alt="Avatar">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos error alias, est quia mollitia consectetur expedita ut sit excepturi recusandae dolorem. Veritatis excepturi voluptates natus quos ullam culpa assumenda facere?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <p>Ana Raquel</p>
+                            <img src="man.png" class="img-circle" height="55" width="55" alt="Avatar">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="well">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odio eius adipisci, deserunt doloribus dolorem ullam esse obcaecati voluptatem sint aperiam tempore. Error in exercitationem odio nobis aliquam aspernatur fugit?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 well">
+                <div class="thumbnail">
+                    <p>Artigos:</p>
+                    <img src="devweb.png" alt="Paris" width="400" height="300">
+                    <p><strong>IMPORTANCIA DA MANUTENÇÃO DO HARDWARE</strong></p>
+                    <button class="btn btn-primary">ACESSE</button>
+                </div>
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+                <div class="well">
+                    <p>ADS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--PERFIL USUARIO-->
+    <footer class="container-fluid text-center">
+        <p>Todos os direitos reservados itBEE - 2020</p>
+    </footer>
+
+	
+</body>
+</html>

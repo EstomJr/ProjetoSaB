@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Login</title>
+    <meta name="author" content="ESTOM PAULINO DA SILA JUNIOR">
+     <link rel="stylesheet" type="text/css" href="stylelogin.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="center">
+<h1>itBEE</h1>
+            <img src="logo.png" alt="Logo" />
+            
+
+        </div>
+    </header>
+
+    <section class="formulario">
+        <div class="center">
+            <fieldset>
+                <form method="post">
+                    <div class="box">
+                        <input type="email" placeholder="Email" name="email" />
+                    </div>
+                    <div class="box">
+                        <input type="password" placeholder="Senha" name="senha" />
+                    </div>
+                    <div method = "get" class="box">
+                        <form action="../page/feed.htm">
+                            <!--<input type="submit" value="Entrar" class="button_active" onclick="../page/feed.htm" />-->
+                            <form>
+                                    <button type="submit" formaction="../page/profile.htm" >Profissional</button>
+                                    <button type="submit" formaction="../page/teste-cliente.html" style="margin-bottom: 0px;">Cliente</button>
+                            </form>
+                        </form>
+                    </div>
+                    
+                    
+                    <div class="box">
+                        <span class="aviso-cadastro">Não tem um cadastro ?</span><br />
+                        <span class="link-cadastro">Cadastre-se clicando <a href="../formu/form.html">Aqui !</a><br />
+                        <span class="voltar-page"><a href="../page/pagina.html">voltar</a></span>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>Todos os direitos reservados itBEE - 2020</p>
+    </footer>
+</body>
+
+</html>

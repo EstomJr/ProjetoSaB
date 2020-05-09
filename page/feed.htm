@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="author" content="ESTOM PAULINO DA SILA JUNIOR">
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="feed.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+        
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        .jumbotron {
+            background-color: #eead2d;
+            color: #fff;
+            padding: 150px 0px;
+            margin: 0px 0px;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .container-fluid {
+            padding: 0px 0px;
+        }
+    </style>
+    <title>Feed</title>
+</head>
+
+<body>
+    <!--N A V B A R-->
+
+    <nav class="navbar navbar-light" style="background-color: #eead2d; ">
+        <a class="navbar-brand " href="# ">
+            <img src="itBee.jpeg " width="50 " height="50 " class="d-inline-block align-top " alt=" "> itBee
+        </a>
+        <form class="form-inline ">
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <button type="button" class="btn btn-success ml-2">
+                <span class="glyphicon glyphicon-search"></span> Buscar
+            </button>
+        </form>
+        <div>
+            <!--Botao do HOME-->
+            <button type="button" class="btn btn-default btn-sn">
+                <span class="glyphicon glyphicon-home"></span> Home
+            </button>
+            <!--Botao do HOME-->
+
+            <!--Modal DEMANDAS-->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <span class="sr-only">Error:</span> Você não tem nenhuma nova demanda.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MODAL DEMANDAS-->
+
+            <!-- MODAL MENSAGENS-->
+            <button type="button" class="btn btn-default btn-sn" data-toggle="modal" data-target="#myModal">
+                 <span class="glyphicon glyphicon-comment"></span> Mensagens  
+                <span class="badge">0</span>
+                </button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span> Você não tem nenhuma nova mensagem.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL MENSAGENS-->
+        </div>
+        <!--SESSAO USUARIO-->
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></buttonclass>
+                <span class="glyphicon glyphicon-user"></span> Usuario
+                </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="profile.htm">Meu Perfil</a>
+                <a class="dropdown-item" href="#">Gerenciar conta</a>
+                <a class="dropdown-item" href="#">Minhas demandas</a>
+                <a class="dropdown-item" href="./pagina.html">Sair</a>
+            </div>
+        </div>
+        <!--SESSAO USUARIO-->
+    </nav>
+    <!--N A V B A R-->
+
+    <!--TELA INICIAL-->
+    <div class="container-fluid">
+        <div class="jumbotron text-center">
+            <h1>itBee</h1>
+            <p>Bem vindo a nossa comunidade, aqui você poderá demandas para realizar serviços e se você precisa de algum serviço também poderá encontrar técnicos para solucionar seus problemas.
+            </p>
+        </div>
+        <div class="container">
+            <img src="devweb.jpg" class="img-fluid rounded float-left">
+            <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar orci vel egestas tempor. Quisque efficitur odio vitae tincidunt dignissim. Mauris luctus volutpat mattis. Donec mattis posuere felis, id tincidunt velit dictum vitae.
+                Phasellus non rutrum turpis, id dignissim metus. Nunc tortor arcu, sagittis id mattis id, placerat pulvinar mi. Donec malesuada condimentum nisl at blandit. Maecenas lacinia justo a consequat accumsan. Nullam eu felis lectus.</h4>
+        </div>
+        <!--TELA INICIAL-->
+
+        <!--ANUNCIOS E CARD-->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card" witdh="500" height="50">
+                    <img srcset="anuncio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">#TAPEGANGOFOGO</h3>
+                        <p class="card-text">O Anúncio Grelhado do BK voltou! Corre lá no nosso app que ainda tem muito Whopper de graça pra sair da grelha e muito anúncio da concorrência pra “grelhar”. 🔥</p>
+                        <a href="http://www.burgerking.com.br/" class="btn btn-warning">Acessar burger king</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="devweb.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Você sabia?</h3>
+                        </br>
+                        <p class="card-text">A manutenção de máquinas se tornou algo de suma importancia nos dias autais, saber desmontar e montar uma máquina vem sendo requisito para alguns emprego, pois se der algum problema na máquina que você trabalha, quem poderá te
+                            ajudar?
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ANUNCIOS E CARD-->
+
+        <!--CAOUSEL-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="container-fluid">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="design.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="devweb.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="971.jpg">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+        <!--CAOUSEL-->
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+</body>
+
+</html>>
