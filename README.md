@@ -1,3 +1,5 @@
+🚀👨‍💻
+
 # ProjetoSaB
 
 Desafio Seed a Bit em uma construção de sistema de de armazenamento de profissionais de TI e clientes, tendo demandas a ser buscadas e cumpridas.
